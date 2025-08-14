@@ -1,0 +1,37 @@
+/* Fonte já aplicada inline no <body>; demais estilos aqui */
+
+/* Esconde a barra de rolagem mas mantém a funcionalidade */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Transições dos modais */
+.overlay-base {
+  transition: opacity 0.4s ease-in-out;
+}
+.content-base {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Barra de progresso do story */
+.progress-bar-inner {
+  transition: width 5s linear; /* Duração da barra de progresso */
+}
+
+/* Ícone de curtir preenchido */
+.like-icon.liked {
+  fill: #ef4444; /* red-500 */
+  color: #ef4444;
+}
+
+/* Truncar texto em 3 linhas */
+.text-ellipsis-3-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
